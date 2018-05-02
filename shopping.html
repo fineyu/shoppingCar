@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/shopping.css">
+</head>
+<body>
+    <!-- 顶部 -->
+    <div class="header">
+        <img src="img/fanhuitubiao拷贝2@2x.png" alt="">
+        购物车
+    </div>
+    <!-- 门店 -->
+    <div class="shop">
+        <div class="shop_name" style="margin-top: 7.7vh">
+            <div class="shop_img">
+                <img src="img/weixuan@2x.png" alt="" class="unchoose">
+                <img src="img/xuanzhongzhifu@2x.png" class="none choose" alt="">
+            </div>
+            <span class="name">
+                <img src="img/椭圆4@2x.png" alt="">
+                千亩大叔
+            </span>
+        </div>
+        <div class="product">
+            <div class="product_con">
+                <div class="product_choose">
+                    <img src="img/weixuan@2x.png" alt="" class="unchoose">
+                    <img src="img/xuanzhongzhifu@2x.png" class="none  choose" alt="">
+                </div>
+                <div class="product_details">
+                    <img src="img/gouchezhongtupian@2x.png"  alt="">
+                    <div class="words">
+                        <h6>湖南郴州砂糖橘</h6>
+                        <p>精品装20个/盒</p>
+                        <span>￥50.00</span>
+                        <div class="add">
+                            <div>-</div>
+                            <div>1</div>
+                            <div>+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="delate">
+                <img src="img/shanchu@2x.png" alt="">
+                <p>删除</p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_con">
+                <div class="product_choose">
+                    <img src="img/weixuan@2x.png" alt=""  class="unchoose">
+                    <img src="img/xuanzhongzhifu@2x.png" alt="" class="none  choose" >
+                </div>
+                <div class="product_details">
+                    <img src="img/gouchezhongtupian@2x.png" alt="">
+                    <div class="words">
+                        <h6>湖南郴州砂糖橘</h6>
+                        <p>精品装20个/盒</p>
+                        <span>￥50.00</span>
+                        <div class="add">
+                            <div>-</div>
+                            <div>1</div>
+                            <div>+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="delate">
+                <img src="img/shanchu@2x.png" alt="">
+                <p>删除</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="footer_left">
+            <div class="all">
+                <img src="img/weixuan@2x.png" alt="" class="unchoose " id="unall">
+                <img src="img/xuanzhongzhifu@2x.png" alt="" class="none choose  " id="allchoose">
+                全选
+            </div>
+            <div>
+                总计：<b>￥60.00</b>
+            </div  >
+        </div>  
+        <div class="footer_right">
+            去结算
+        </div>  
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+"px"</script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/shopping.js"></script>
+    <script>
+        // 商店产品左滑显示删除
+        $(".shop>.product").on("swipeleft",function(){
+            $(this).addClass("change_left");
+        })
+        $(".shop>.product").on("swiperight",function(){
+            $(this).removeClass("change_left");
+        })
+         // 点击删除  删除该列商品
+        $(".delate").on("click",function(){
+            $(this).parent().hide();
+            $("div.shop").each(function(){
+                if($(this).find(".product")){
+                    $(this).css("display","none")
+                }              
+            })
+        })
+                    
+
+
+
+        // 点击单个商品
+        $(".product_choose>img").click(function(){
+            $(this).toggle();
+            $(this).siblings().toggle(); 
+            if(!$(".product_choose>.choose").hasClass("none")){
+                $(this).parents(".shop").children(".choose").show();
+            }
+        })
+        // 判断每个单件是否被勾选，如都被勾选该门店被勾选
+        // var img_class=$(".product_choose  img").last().hasClass("none")
+        // if(!img_class){
+
+        // }
+
+        // 点击商店 勾选全部商品
+        // $(".shop_img>img").click(function(){
+        //     $(this).toggle();
+        //     $(this).siblings().toggle(); 
+        //     if($(".shop_name>.choose").show()){
+        //         $(".choose").show();
+        //         $(".unchoose").hide();
+        //     }
+        // })
+       
+        
+        // 点击商品 商店勾选
+           
+        
+       
+
+
+        // 点击全选所有都打勾
+        $(".all>img").click(function(){
+            $(this).toggle()
+            $(this).siblings().toggle();
+            if($("#unall").hasClass("none")){
+                $(".unchoose").show();
+                $(".choose").hide();
+            }else if($("#allchoose").hasClass("none")){
+                $(".choose").show();
+                $(".unchoose").hide();
+            }
+        })
+        
+    </script>
+</body>
+</html>

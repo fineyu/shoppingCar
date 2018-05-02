@@ -1,0 +1,173 @@
+/* 样式初始化 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary{ margin:0; padding:0;}  
+body{ font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Arial"; color:#333; background-color:#fff; font-size:15px; background-image:url(about:blank); background-attachment:fixed; overflow-x:hidden;}  
+a{ color:#06f; text-decoration:none;}  
+a:hover{ color:#f60; text-decoration:none;}  
+img{ border:none; vertical-align:middle; max-width: 100%;}  
+i,em{ font-style:normal;}  
+li{ list-style-type:none;}  
+textarea{ resize:vertical;}  
+input, select, textarea{ font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Arial"; background-color:#fff; margin:0; padding:0; outline:none;} 
+.clearfix:after { content:”\200B”; display:block; height:0; line-height:0; font-size:0; clear:both; } 
+.clearfix {zoom:1;}/*IE/7/6/
+/*单行文本溢出省略*/
+.odd-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+/*多行文本溢出省略*/
+.even-ellipsis{display:-webkit-box !important;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2;}
+/*3行文本溢出省略*/
+.three-ellipsis{display:-webkit-box !important;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:3;}
+.all-ellipsis{display:-webkit-box !important;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:8;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 所有的头部 */
+.header{
+    width: 100%;
+    height: 205px;
+    background-color: #383434;
+}
+.header_center{
+    width: 70%;
+    height: 205px;
+    margin:auto;
+}
+.header_logo{
+    width: 20%;
+    height: 205px;
+    float: left;
+}
+.header_logo img:nth-child(1){
+    height: 40%;
+    margin-top: 20px;
+}
+.header_logo img:nth-child(2){
+    height: 70%;
+    margin-top: -30px;
+}
+.header_con{
+    float: right;
+    width: 80%;
+    height: 205px;
+}
+.header_con div{
+    float: left;
+    /* background-color: #fff; */
+    width: 16%;
+    height: 205px;
+    text-align: center;
+}
+
+.header_con div .header_con_tit{
+    display: inline-block;
+    margin-top: 30px;
+    font-size:18px;
+    font-family: "微软雅黑";
+    font-weight: 500;
+    text-decoration: line;
+    border-bottom: 1px solid #fff;
+    color:#fff;
+}
+.header_con div span {
+    display: block;
+    padding:3px 0;
+    color:#fff;
+    font-family: "微软雅黑";
+    font-weight: 400;
+    font-size: 15px;
+}
+.header_con div a:hover span{
+    color:red;
+}
+
+.header_con div a:hover .header_con_tit{
+    border-bottom: 1px solid red;
+}
+/* 所有的底部 */
+/* 底部 */
+.footer{
+    height: 120px;
+    width: 100%;
+    background-color: #383434;
+    margin-top: 20px;
+    position: relative;
+}
+.code{
+    width: 90px;
+    height: 100px;
+    margin-left: 140px;
+    float:left;
+}
+.code img{
+    width: 80px;
+    height: 80PX;
+}
+.code p{
+    font-size: 12px;
+    color:#fff;
+}
+.footer_contact{
+    height: 100px;
+    width: 230px;
+    float:left;
+    color: #fff;
+}
+.footer_contact span{
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+.footer_contact span:nth-child(1){
+    display: block;
+    margin-top:10px;
+}
+.footer_logo img{
+    width: 180px;
+    height: 90px;
+    position: absolute;
+    top:-37px;
+    right:400px;
+}
+.footer_con{
+    text-align: center;
+    line-height: 25px;
+    color:#bcb7b7;
+    font-size:14px;
+    position: absolute;
+    right:400px;
+    top:60px;
+}
+/* 友情链接 */
+.link{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e1e1e1;
+    
+}
+.link span{
+    font-size:16px;
+    font-family: "微软雅黑";
+    color:#000;
+    display: inline-block;
+    margin-left: 200px;
+}
+.link a{
+    font-size:14px;
+    color:#959595;
+    display: inline-block;
+}
+.link a:nth-child(2){
+    margin-left: 40px;
+}
