@@ -1,0 +1,504 @@
+/* 头部 */
+html,body{
+    background-color: #f8f8f8 !important;
+}
+.header{
+    width: 7.5rem;
+    height: 43.25vh;
+    /* background-image: url("../img/xiangqingyelunbotu@2x.png"); */
+    /* background-size: 100%; */
+    position: relative;
+}
+.header_tit div img{
+    float: left;
+    width: 7.5rem;
+    height: 43.25vh;
+}    
+.header_tit a{
+    width: 0.51rem;
+    height: 3.82vh;
+    position: absolute;
+    z-index: 100;
+}
+.header_tit a:nth-child(1){
+    left:0.25rem;
+    top:1.87vh;
+}
+.header_tit a:nth-child(2){
+    right:0.25rem;
+    top:1.87vh;
+}
+.header_details{
+    height: 10.8vh;
+    width: 7.02rem;
+    padding: 2.2vh 0.24rem 1.4vh 0.24rem;
+}
+.header_details p:nth-child(1){
+    font-family: "Simhei";
+    font-size: 0.3rem;
+    color: #061010;
+}
+.header_details p:nth-child(2){
+    font-family: "Simhei";
+    font-size: 0.24rem;
+    color: #a0a0a0;
+    margin-top: 1vh;
+}
+.header_price{
+    margin-top: 0.24vh;
+}
+.header_price span:nth-child(1){
+    color: #57c340;
+    font-family: "Simhei";
+    font-size: 0.36rem;
+    display: block;
+    float: left;
+}
+.header_price span:nth-child(2){
+    color: #061010;
+    font-family: "Simhei";
+    font-size: 0.3rem;
+    display: block;
+    float: left;
+    margin-left: 0.25rem;
+}
+.header_price span:nth-child(2) em{
+    color: #a0a0a0;
+    font-family: "Simhei";
+    font-size: 0.24rem;
+}
+.header_price span:nth-child(3){
+    color: #a0a0a0;
+    font-family: "Simhei";
+    font-size: 0.22rem;
+    display: block;
+    float: right;
+    margin-top: 0.9vh;
+}
+/* 选择规格 */
+.choose{
+    width: 7.02rem;
+    padding: 0 0.24rem;
+    height: 6.75vh;
+    line-height: 6.75vh;
+    background-color: #fff;
+    margin-bottom: 1vh;
+}
+.choose img{
+    width: 0.18rem;
+    height: 2.24vh;
+    display: block;
+    float: right;
+    margin-top: 2.4vh;
+}
+.choose span{
+    font-family: "Simhei";
+    font-size: 0.3rem;
+    color:#061010;
+    display: block;
+    float: left;
+}
+.shop_name{
+    height: 12.2vh;
+    line-height: 12.2vh;
+    width: 7.02rem;
+    padding: 0 0.24rem;
+    background-color: #fff;
+}
+.shop_name img:nth-child(1){
+    width: 1.08rem;
+    height: 8.1vh;
+    border-radius: 50%;
+}
+.shop_name span:nth-child(2){
+    font-family: "Simhei";
+    font-size: 0.34rem;
+    color:#060101;
+    margin-left: 0.17rem;
+}
+.shop_name a{
+    font-family: "Simhei";
+    font-size: 0.24rem;
+    color:#a0a0a0;
+    position: absolute;
+    right:0.24rem;
+    border: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+.shop_name a img:nth-last-of-type(1){
+    width: 0.2rem;
+    height: 2vh;
+}
+.condition{
+    width: 7.02rem;
+    padding: 0 0.24rem;
+    height: 3.74vh;
+    line-height: 3.74vh;
+}
+.condition span img{
+    width: 0.23rem;
+    height: 1.72vh;
+    margin-top: -0.3vh;
+}
+.condition span{
+    font-family: "Simhei";
+    font-size: 0.22rem;
+    color:#a0a0a0;
+    display: block;
+    float: left;
+}
+.condition span:nth-child(2){
+    margin-left: 1.54rem;
+}
+.condition span:nth-child(3){
+    float: right;
+}
+/* tab栏 */
+.tab{
+    width: 7.5rem;
+    height: 6.74vh;
+    line-height: 6.74vh;
+    background-color: #fff;
+    color:#060101;
+}
+.linear{
+    width: 7.5rem;
+    height: 0.5vh;
+    background-image:linear-gradient(to bottom, rgba(248, 248,248, 0),20%, rgba(246, 246, 246, 0) 40%, rgba(255, 255, 255, 0) 98%, #FFFFFF 100%);
+}
+.tab_left,.tab_right{
+    width: 50%;
+    height: 6.74vh;
+    float: left;
+    text-align:center;
+    font-family: "Simhei";
+    color: #060101;
+    font-size: 0.34rem;
+}
+.tab_left span,.tab_right span{
+    padding: 0.37vh 0;
+}
+.bottom{
+    color: #57c340;
+    border-bottom: 0.225vh solid #57c340;    
+}
+.eva_header{
+    width: 7.02rem;
+    line-height: 9vh;
+    padding: 0 0.24rem 1.87vh 0.24rem;
+    display: inline-block;
+}
+.none{
+    display: none;
+}
+/* .particulars{
+
+} */
+.evaluate{
+    width: 7.5rem;
+    background-color: #fff;
+}
+.eva_header span{
+    display: block;
+    float: left;
+    height: 4.87vh;
+    line-height: 4.87vh;
+    border: 0.075vh solid #666;
+    color:#666;
+    font-family: "Simhei";
+    font-size: 0.28rem;
+    text-align: center;
+    margin-left:0.28rem;
+    padding: 0 0.21rem;
+    border-radius: 0.1rem;
+    margin-top: 1.87vh;
+}
+
+.eva_header span:nth-child(1){
+    margin-left: 0;
+}
+.green{
+    color: #57c340 !important;
+    border:0.075vh solid #57c340 !important;
+}
+.buyers_show{
+    border-bottom: 0.075vh solid #ddd;
+}
+.buyers_header{
+    width: 7.02rem;
+    height: 7.12vh;
+    line-height: 7.12vh;
+    padding: 0 0.24rem;
+}
+.buyers_header img{
+    width: 0.64rem;
+    height: 4.8vh;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    margin-top: 1.4vh;
+}
+.name_star{
+    height: 7.12vh;
+}
+.name_star{
+    position: relative;
+}
+.name_star span{
+    position: absolute;
+    left: 0.77rem;
+    top: -1.2vh;
+    font-family: "Simhei";
+    font-size: 0.28rem;
+    color: #060101;
+}
+.name_star p{
+    float: right;
+}
+.name_star .star{
+    position: absolute;
+    left: 0.77rem;
+    top:2.57vh;
+}
+.star img{
+    width: 0.25rem;
+    height: 1.87vh;
+    margin-bottom: 1vh;
+}
+.show_con{
+    font-size: 0.24rem;
+    font-family: "Simhei";
+    color: #060101;
+    padding: 0 0.27rem 1.72vh 0.27rem;
+}
+.show_img img{
+    width: 2.2rem;
+    height: 15.14vh;
+    margin-bottom: 1vh;
+}
+/* 底部 */
+.footer{
+    height: 7.27vh;
+    line-height: 7.27vh;
+    width: 7.5rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+.footer_right{
+    width: 3.75rem;
+    background-color: #57c340;
+    color: #fff;
+    text-align: center;
+    font-family: "Simhei";
+    font-size: 0.28rem;
+    float: right;
+}
+.footer_left{
+    width: 3.75rem;
+    color: #666;
+    text-align: center;
+    font-family: "Simhei";
+    font-size: 0.28rem;
+    float: left;
+    background-color: #f8f8f8;
+}
+.footer_left .left_left{
+    width: 1.85rem;
+    height: 7.27vh;
+    line-height: 7.27vh;
+    float: left;
+    border-right: 0.01rem solid #ddd;
+}
+.footer_left .left_right{
+    width: 1.85rem;
+    height: 7.27vh;
+    line-height: 7.27vh;
+    float: left;
+    position: relative;
+}
+.left_left img{
+    width: 0.4rem;
+    height: 3vh;
+}
+.left_right img{
+    width: 0.4rem;
+    height: 3vh;
+}
+.left_right em {
+    display: inline-block;
+    background-color: #f3683f;
+    border-radius: 50%;
+    width: 0.4rem;
+    height: 3vh;
+    line-height: 3vh;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #fff;
+    position: absolute;
+    top: 1.33vh;
+    left: 0.45rem;
+}
+.left_right em i{
+    display: block;
+    font-size: 0.24rem;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+}
+/* 弹出框 */
+.pop{
+    width: 7.5rem;
+    height: 54.8vh;
+    background-color: #fff;
+    z-index: 10001;
+    position: fixed;
+    bottom: 0;
+}
+.pop_header{
+    width: 7rem;
+    height: 14.2vh;
+    border-bottom: 0.075vh solid #eee;
+    padding: 1.9vh 0.25rem;
+}
+.pop_header img{
+    width: 1.77rem;
+    height: 13.5vh;
+    /* display: block; */
+    float: left;
+}
+.pop_detail{
+    width: 4.5rem;
+    height: 10.06vh;
+    padding: 1.72vh 0 1.72vh 0.2rem;
+    float: left;
+    position: relative;
+}
+.pop_detail .pop_price{
+    font-family: "Simhei";
+    font-size: 0.36rem;
+    color: #57c340;
+}
+.pop_detail .number{
+    font-family: "Simhei";
+    font-size: 0.24rem;
+    color: #999;
+}
+.pop_detail .choose_num{
+    font-family: "Simhei";
+    font-size: 0.26rem;
+    color: #060101;
+    display: block;
+}
+#delate{
+    width: 0.45rem;
+    height: 3.37vh;
+    position: absolute;
+    right: -0.5rem;
+    top: 0;
+}
+.pop_choose{
+    padding: 1.72vh 0.2rem;
+    display: inline-block;
+    border-bottom: 0.075vh solid #eee;
+}
+.pop_choose p{
+    font-family: "Simhei";
+    color: #061010;
+    font-size: 0.3rem;
+}
+.pop_choose span{
+    height: 2vh;
+    padding: 1.5vh 0.29rem;
+    border: 0.01rem solid #999;
+    color: #999;
+    text-align: center;
+    border-radius: 0.15rem;
+    margin: 1vh 0;
+    margin-left: 0.66rem;
+    display: block;
+    float: left;
+    line-height: 2vh;
+}
+.pop_footer{
+    width: 7rem;
+    height: 54.28vh;
+    background-color: #fff;
+    padding: 1.72vh 0.25rem 0 0.25rem;
+    position: relative;
+}
+.pop_footer p{
+    font-family: "Simhei";
+    color: #061010;
+    font-size: 0.3rem;
+}
+.add{
+    width: 2.06rem;
+    height: 4vh;
+    position: absolute;
+    right: 0.25rem;
+}
+.min{
+    width: 0.5rem;
+    height: 4vh;
+    float: left;
+    border-radius: 50%;
+    border: 0.01rem solid #57c340;
+    color: #061010;
+    font-family: "Simhei";
+    font-size: 0.36rem;
+    text-align: center;
+}
+.plus{
+    width: 0.5rem;
+    height: 4vh;
+    float: right;
+    border-radius: 50%;
+    border: 0.01rem solid #57c340;
+    color: #061010;
+    font-family: "Simhei";
+    font-size: 0.36rem;
+    text-align: center;
+}
+.num{
+    width: 0.97rem;
+    height: 4vh;
+    line-height: 4vh;
+    text-align: center;
+    color: #061010;
+    font-family: "Simhei";
+    font-size: 0.36rem;
+    float: left;
+}
+.add_car{
+    width: 7.02rem;
+    height: 5.77vh;
+    line-height: 5.77vh;
+    background-color: #57c340;
+    color: #fff;
+    text-align: center;
+    font-family: "Simhei";
+    font-size: 0.36rem;
+    border-radius: 0.45rem;
+    position: absolute;
+    bottom: 37vh;
+    box-shadow: 0.01rem 0.01rem 0.35rem #57c340
+}
+/* 遮罩层 */
+.mask {
+    position: absolute;
+    top: 0px;
+    filter: alpha(opacity=60);
+    background-color: #777;
+    z-index: 1002;
+    left: 0px;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+}
+
+.header_price span{
+    display: block;
+}
